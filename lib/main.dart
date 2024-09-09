@@ -51,7 +51,6 @@ class _MyAppState extends State<MyApp> {
             padding: const EdgeInsets.all(20),
             child: ListView(
               children: [
-                Text(message),
                 const SizedBox(
                   height: 20,
                 ),
@@ -63,49 +62,50 @@ class _MyAppState extends State<MyApp> {
                   ),
                   child: const Text("Initialize"),
                 ),
-                if (isLogin) ...[
-                  ElevatedButton(
-                    onPressed: () => ZendeskMessaging.show(),
-                    child: const Text("Show messaging"),
-                  ),
-                  ElevatedButton(
-                    onPressed: () => _getUnreadMessageCount(),
-                    child:
-                        Text('Get unread message count - $unreadMessageCount'),
-                  ),
-                ],
-                ElevatedButton(
-                  onPressed: () => _setTags(),
-                  child: const Text("Add tags"),
-                ),
-                ElevatedButton(
-                  onPressed: () => _clearTags(),
-                  child: const Text("Clear tags"),
-                ),
-                ElevatedButton(
-                  onPressed: () => _login(),
-                  child: const Text("Login"),
-                ),
-                ElevatedButton(
-                  onPressed: () => _logout(),
-                  child: const Text("Logout"),
-                ),
-                ElevatedButton(
-                  onPressed: () => _checkUserLoggedIn(),
-                  child: const Text("Check LoggedIn"),
-                ),
-                ElevatedButton(
-                  onPressed: () => _setFields(),
-                  child: const Text("Add Fields"),
-                ),
-                ElevatedButton(
-                  onPressed: () => _clearFields(),
-                  child: const Text("Clear Fields"),
-                ),
+                // if (isLogin) ...[
+                //   ElevatedButton(
+                //     onPressed: () => ZendeskMessaging.show(),
+                //     child: const Text("Show messaging"),
+                //   ),
+                //   ElevatedButton(
+                //     onPressed: () => _getUnreadMessageCount(),
+                //     child:
+                //         Text('Get unread message count - $unreadMessageCount'),
+                //   ),
+                // ],
+                // ElevatedButton(
+                //   onPressed: () => _setTags(),
+                //   child: const Text("Add tags"),
+                // ),
+                // ElevatedButton(
+                //   onPressed: () => _clearTags(),
+                //   child: const Text("Clear tags"),
+                // ),
+                // ElevatedButton(
+                //   onPressed: () => _login(),
+                //   child: const Text("Login"),
+                // ),
+                // ElevatedButton(
+                //   onPressed: () => _logout(),
+                //   child: const Text("Logout"),
+                // ),
+                // ElevatedButton(
+                //   onPressed: () => _checkUserLoggedIn(),
+                //   child: const Text("Check LoggedIn"),
+                // ),
+                // ElevatedButton(
+                //   onPressed: () => _setFields(),
+                //   child: const Text("Add Fields"),
+                // ),
+                // ElevatedButton(
+                //   onPressed: () => _clearFields(),
+                //   child: const Text("Clear Fields"),
+                // ),
                 ElevatedButton(
                   onPressed: () => _show(),
                   child: const Text("Show"),
                 ),
+                Text(message),
               ],
             ),
           ),
